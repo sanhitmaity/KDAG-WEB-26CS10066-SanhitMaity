@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register — KDAG Bootcamp</title>
+    <meta name="description" content="Register for KDAG's Beginner's Python & Data Analytics Bootcamp." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <canvas id="bg-network"></canvas>
+    <div class="grain"></div>
+
+    <nav class="site-nav">
+
+      <div class="wrap">
+        <a href="index.html" class="brand"><span class="mark"></span>KDAG <span class="full">Kharagpur Data Analytics Group</span></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#curriculum">Curriculum</a>
+        </div>
+        <div class="nav-actions">
+          <a class="btn btn-official" href="https://www.kdagiitkgp.com" target="_blank" rel="noopener">Official website</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="register-shell">
+      <div class="register-panel">
+
+        <div class="register-head fade-in">
+          <h1>Register for the Bootcamp</h1>
+          <p>Beginner's Python &amp; Data Analytics — four weeks, starting soon.</p>
+        </div>
+
+        <form id="registration-form" class="form-card fade-in" style="animation-delay:.08s" novalidate>
+
+          <div class="field" id="wrap-name">
+            <label for="field-name">Full name</label>
+            <input type="text" id="field-name" name="name" placeholder="e.g. Sanhit Maity" autocomplete="name" />
+            <div class="error-msg">Please enter your full name.</div>
+          </div>
+
+          <div class="field" id="wrap-roll">
+            <label for="field-roll">Roll number <span class="hint">exactly 9 characters, e.g. 26CS10066</span></label>
+            <input type="text" id="field-roll" name="roll" placeholder="26XX10001" maxlength="9" autocomplete="off" />
+            <div class="error-msg">Roll number must be exactly 9 characters (e.g. 26XX10001).</div>
+          </div>
+
+          <div class="field" id="wrap-email">
+            <label for="field-email">Email address</label>
+            <input type="email" id="field-email" name="email" placeholder="you@kgpian.iitkgp.ac.in" autocomplete="email" />
+            <div class="error-msg">Please enter a valid email address.</div>
+          </div>
+
+          <div class="field" id="wrap-department">
+            <label for="field-department">Department</label>
+            <select id="field-department" name="department">
+
+              <option value="" selected disabled>Select your department</option>
+              <option>Computer Science &amp; Engineering</option>
+              <option>Electrical Engineering</option>
+              <option>Electronics &amp; Electrical Communication Engg.</option>
+              <option>Mechanical Engineering</option>
+              <option>Civil Engineering</option>
+              <option>Chemical Engineering</option>
+              <option>Aerospace Engineering</option>
+              <option>Metallurgical &amp; Materials Engineering</option>
+              <option>Mining Engineering</option>
+              <option>Architecture &amp; Regional Planning</option>
+              <option>Ocean Engineering &amp; Naval Architecture</option>
+              <option>Biotechnology</option>
+              <option>Other</option>
+
+            </select>
+            <div class="error-msg">Please select your department.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Register</button>
+          <p class="form-footnote">By registering, you'll receive bootcamp updates from KDAG by email.</p>
+        </form>
+
+        <div id="success-card" class="success-card">
+          <div class="success-badge">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12.5L9.5 18L20 6" stroke="#fff8f2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <h2>Registered successfully!</h2>
+          <p>Keep an eye on your inbox for the joining details.</p>
+
+          <div class="success-detail">
+
+            <div><span>Name</span><strong id="out-name">—</strong></div>
+            <div><span>Roll number</span><strong id="out-roll">—</strong></div>
+            <div><span>Department</span><strong id="out-dept">—</strong></div>
+            <div><span>Status</span><strong>Confirmed</strong></div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
